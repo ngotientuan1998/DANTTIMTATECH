@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="10dp"
+    tools:context=".ChiTietDonHang">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Tên khách hàng"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:id="@+id/tvTenKhachHangCTDT"></TextView>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Số điện thoại khách hàng"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:layout_below="@+id/tvTenKhachHangCTDT"
+        android:id="@+id/tvSDTKhachHangMuaCTDT"></TextView>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Email khách hàng"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:layout_below="@+id/tvSDTKhachHangMuaCTDT"
+        android:id="@+id/tvEmailKhachHangMuaCTDT"></TextView>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Địa chỉ chi tiết"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:layout_below="@+id/tvEmailKhachHangMuaCTDT"
+        android:id="@+id/tvDiaChiTietKHMuaCTDT"></TextView>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Xã "
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:layout_marginLeft="15dp"
+        android:layout_below="@+id/tvEmailKhachHangMuaCTDT"
+        android:layout_toRightOf="@+id/tvDiaChiTietKHMuaCTDT"
+        android:id="@+id/tvXaKHMuaCTDT"></TextView>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Huyện "
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:layout_below="@+id/tvXaKHMuaCTDT"
+        android:id="@+id/tvHuyenKHMuaCTDT"></TextView>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Tỉnh "
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:layout_marginLeft="10dp"
+        android:layout_below="@+id/tvXaKHMuaCTDT"
+        android:layout_toRightOf="@+id/tvHuyenKHMuaCTDT"
+        android:id="@+id/tvTinhKHMuaCTDT"></TextView>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Ngày đặt"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:layout_marginLeft="10dp"
+        android:layout_below="@+id/tvTinhKHMuaCTDT"
+        android:id="@+id/tvNgayDatMuaCTDT"></TextView>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="9dp"
+        android:layout_below="@+id/tvNgayDatMuaCTDT"
+        android:id="@+id/ryc_DsSpTrongDonHangCTDT"></androidx.recyclerview.widget.RecyclerView>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Số lượng sản phẩm "
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:layout_marginTop="9dp"
+        android:layout_marginLeft="10dp"
+        android:layout_below="@+id/ryc_DsSpTrongDonHangCTDT"
+        android:id="@+id/tvSoLuongSpMuaCTDT"></TextView>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Tổng  giá"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:layout_below="@+id/tvSoLuongSpMuaCTDT"
+        android:id="@+id/tvTongGiaSPMuaCTDT"
+        ></TextView>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Trạng thái đơn hàng"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:layout_below="@+id/tvTongGiaSPMuaCTDT"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/tvTrangThaiSPMuaCTDT"
+        ></TextView>
+</RelativeLayout>
+</ScrollView>

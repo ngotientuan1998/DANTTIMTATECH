@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="5dp"
+    tools:context=".ChiTietKhachHang">
+
+    <ImageView
+        android:id="@+id/imThoatKhachChiTietTuDsKhach"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/thoat"></ImageView>
+    <ImageView
+        android:id="@+id/imThoatKhachChiTietTuDsSanPham"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/thoat"></ImageView>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:text="CHI TIẾT SHOP"
+        android:textColor="#EA910E"
+        android:textSize="20sp"
+        android:textStyle="bold"></TextView>
+
+    <ImageView
+        android:id="@+id/imAnhKhachChiTiet"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_below="@+id/imThoatKhachChiTietTuDsSanPham"
+        android:src="@drawable/pepel"></ImageView>
+
+    <TextView
+        android:id="@+id/tvTenKhachChiTiet"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="5dp"
+        android:layout_marginTop="50dp"
+        android:layout_toRightOf="@+id/imAnhKhachChiTiet"
+        android:text="Tên khách"
+        android:textSize="25sp"
+        android:textStyle="bold"></TextView>
+
+    <TextView
+        android:id="@+id/tvGioiTinhKhachChiTiet"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tvTenKhachChiTiet"
+        android:layout_marginLeft="5dp"
+        android:layout_toRightOf="@+id/imAnhKhachChiTiet"
+        android:text="Giới tính"
+        android:textSize="20sp"
+        android:textStyle="bold"></TextView>
+
+
+    <TextView
+        android:id="@+id/tvsdtKhachChiTiet"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/imAnhKhachChiTiet"
+        android:layout_marginLeft="5dp"
+        android:layout_marginTop="8dp"
+        android:text="Số điện thoại"
+        android:textSize="16sp"
+        android:textStyle="bold"></TextView>
+
+    <TextView
+        android:id="@+id/tvEmailKhachChiTiet"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tvsdtKhachChiTiet"
+        android:layout_marginLeft="5dp"
+        android:layout_marginTop="8dp"
+        android:text="email"
+        android:textSize="16sp"
+        android:textStyle="bold"></TextView>
+
+    <TextView
+        android:id="@+id/tvDiaChiKhachChiTiet"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tvEmailKhachChiTiet"
+        android:layout_marginLeft="5dp"
+        android:layout_marginTop="8dp"
+        android:text="Địa chỉ"
+        android:textSize="18sp"
+        android:textStyle="bold"></TextView>
+    <TextView
+        android:id="@+id/tvNamSinhKhachChiTiet"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tvDiaChiKhachChiTiet"
+        android:layout_marginLeft="5dp"
+        android:layout_marginTop="8dp"
+        android:text="Năm sinh"
+        android:textSize="18sp"
+        android:textStyle="bold"></TextView>
+    <TextView
+        android:id="@+id/tvNgayTaoKhachChiTiet"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tvNamSinhKhachChiTiet"
+        android:layout_marginLeft="5dp"
+        android:layout_marginTop="8dp"
+        android:text="Ngày tạo nick"
+        android:textSize="18sp"
+        android:textStyle="bold"></TextView>
+
+    <TextView
+        android:id="@+id/tvIDKhachChiTiet"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tvNgayTaoKhachChiTiet"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="8dp"
+        android:text="ID shop"
+        android:textSize="18sp"
+        android:textStyle="bold"></TextView>
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:backgroundTint="#DF8A0D"
+        android:text="Xem lịch sử mua bán "
+        android:id="@+id/btnLichSuMuaBanKhachChiTiet"
+        android:layout_marginTop="15dp"
+        android:layout_below="@+id/tvIDKhachChiTiet"></Button>
+
+
+</RelativeLayout>

@@ -1,0 +1,31 @@
+<!-- res/menu/bottonnavigation.xml -->
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item
+        android:id="@+id/bottom_home"
+        android:title="Home"
+        android:icon="@drawable/baseline_home_work_24"
+        />
+
+    <item
+        android:id="@+id/bottom_gioHang"
+        android:title="Giỏ hàng"
+        android:icon="@drawable/xeday"
+        />
+    <item
+        android:id="@+id/bottom_don"
+        android:title="Đơn"
+        android:icon="@drawable/baseline_book_24"
+        />
+    <item
+        android:id="@+id/bottom_licSu"
+        android:title="Lịch sử"
+        android:icon="@drawable/baseline_watch_later_24"
+        />
+    <item
+        android:id="@+id/bottom_ThongKe"
+        android:title="Thống kê"
+        android:icon="@drawable/monye"
+        />
+
+</menu>

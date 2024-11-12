@@ -1,0 +1,207 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".ChayQuangCao">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:background="#FF9800"
+        >
+
+        <ImageView
+            android:id="@+id/img_thoatChayQcSP"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:src="@drawable/thoat"></ImageView>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="Chạy quảng cáo"
+            android:textColor="@color/white"
+            android:textSize="25sp"
+            android:textStyle="bold"></TextView>
+    </RelativeLayout>
+
+   <RelativeLayout
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+       android:padding="5dp">
+       <TextView
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:text="Mã sản phâm"
+           android:textSize="17sp"
+           android:textStyle="bold"
+           android:id="@+id/tvMaSanPhamQC"></TextView>
+       <TextView
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:text="tên sản phâm"
+           android:textSize="17sp"
+           android:layout_below="@+id/tvMaSanPhamQC"
+           android:textStyle="bold"
+           android:id="@+id/tvTenSanPhamQC"></TextView>
+   </RelativeLayout>
+
+
+    <LinearLayout
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="15dp"
+        android:background="@drawable/boder_4canh"
+        android:padding="10dp">
+
+        <TextView
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:text="Cấp độ 1\n
+Gía:300.000/1 sản phẩm\n
+Điểm đề xuất:5 điểm\n
+"
+            android:textSize="20sp"
+            android:textStyle="bold"></TextView>
+
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/btn_ChayCapDo1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:backgroundTint="#FF9800"
+        android:text="Chạy cấp độ 1"
+        android:textColor="@color/white"
+        android:textSize="20sp"></Button>
+
+    <LinearLayout
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="15dp"
+        android:background="@drawable/boder_4canh"
+        android:padding="10dp">
+
+        <TextView
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:text="Cấp độ 2\n
+Gía:900.000/1 sản phẩm\n
+Điểm đề xuất:16 điểm\n
+"
+            android:textSize="20sp"
+            android:textStyle="bold"></TextView>
+
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/btn_ChayCapDo2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:backgroundTint="#FF9800"
+        android:text="Chạy cấp độ 2"
+        android:textColor="@color/white"
+        android:textSize="20sp"></Button>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="180dp"
+        android:background="@drawable/boder_edt"
+        android:orientation="vertical"
+        android:padding="5dp">
+
+        <TextView
+            android:id="@+id/TvCapDo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:text="Cấp độ 1"
+            android:textSize="17sp"
+            android:textStyle="bold"></TextView>
+
+        <TextView
+            android:id="@+id/TvPhiDichVu"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Phí dịch vụ"
+            android:textSize="17sp"
+            android:textStyle="bold"></TextView>
+
+        <TextView
+            android:id="@+id/TvTenCongTy"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Tên công ty"
+            android:textSize="17sp"
+            android:textStyle="bold"></TextView>
+
+        <TextView
+            android:id="@+id/TvStk"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="stk"
+            android:textSize="17sp"
+            android:textStyle="bold"></TextView>
+
+        <TextView
+            android:id="@+id/TvNoiDung"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Nội dung "
+            android:textSize="17sp"
+            android:textStyle="bold"></TextView>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/btn_XacNhanCK"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:backgroundTint="#FF9800"
+                android:text="Đã chuyên chuyển khoản"></Button>
+
+        </LinearLayout>
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Liên hệ: "
+        android:textSize="17sp"
+
+        android:textStyle="bold"></TextView>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="7dp"
+        android:text="sđt/zalo:123456789 "
+        android:textSize="17sp"
+
+        android:textStyle="bold"></TextView>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="7dp"
+        android:text="email:sunnyTeam@gmail.com"
+        android:textSize="17sp"
+        android:textStyle="bold"></TextView>
+
+</LinearLayout>

@@ -1,0 +1,62 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="5dp"
+    tools:context="framentbottom.gioHangFragment">
+
+      <ImageView
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:src="@drawable/thoat"
+          android:id="@+id/imgThoatGioHangGH"></ImageView>
+      <TextView
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:text="Giỏ hàng"
+         android:layout_centerHorizontal="true"
+          android:textSize="25sp"
+          android:textStyle="bold"
+          android:textColor="#F1940C"></TextView>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/imgThoatGioHangGH"
+        android:layout_marginTop="5dp"
+        android:id="@+id/ryc_RoHangGH"></androidx.recyclerview.widget.RecyclerView>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="120dp"
+        android:layout_alignParentBottom="true"
+        android:padding="9dp"
+        android:background="@drawable/boder_edt">
+        <CheckBox
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/chkTatCaHangGH"
+            android:textStyle="bold"
+            android:text="Tất cả"></CheckBox>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:id="@+id/TvTongThanhToanGH"
+            android:layout_below="@+id/chkTatCaHangGH"
+            android:text="Tổng thanh toán"></TextView>
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Mua hàng"
+            android:backgroundTint="#FD9D0F"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:id="@+id/btnMuaHangGH"></Button>
+    </RelativeLayout>
+
+</RelativeLayout>

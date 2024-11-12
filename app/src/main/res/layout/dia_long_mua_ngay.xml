@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="300dp"
+    android:orientation="vertical"
+    android:background="@drawable/boder_edt"
+    android:padding="10dp">
+   <RelativeLayout
+       android:layout_width="match_parent"
+       android:layout_height="141dp">
+       <ImageView
+           android:layout_width="150dp"
+           android:layout_height="140dp"
+           android:src="@drawable/laptop"
+           android:id="@+id/imgAnhSPMN"></ImageView>
+       <TextView
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:text="Gía giảm sản phẩm"
+            android:layout_toRightOf="@+id/imgAnhSPMN"
+           android:id="@+id/tvGiaGiamSPMN"
+           android:textSize="18sp"
+           android:layout_marginLeft="10dp"
+           android:layout_above="@+id/tvGiaSPMN"
+           android:textStyle="bold"
+          ></TextView>
+       <TextView
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:text="Gía sản phẩm"
+           android:layout_toRightOf="@+id/imgAnhSPMN"
+           android:id="@+id/tvGiaSPMN"
+           android:textSize="18sp"
+           android:textStyle="bold"
+           android:layout_marginLeft="10dp"
+           android:layout_marginBottom="15dp"
+           android:layout_alignParentBottom="true"></TextView>
+       <ImageView
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:src="@drawable/baseline_close_24"
+           android:layout_alignParentRight="true"
+           android:id="@+id/imgDongMN"></ImageView>
+   </RelativeLayout>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="90dp"
+        android:padding="10dp"
+        android:background="@drawable/boder_edt">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="số lượng"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:layout_centerVertical="true"></TextView>
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/imgCongMN"
+            android:layout_alignParentRight="true"
+            android:src="@drawable/daucong"
+            android:layout_centerVertical="true"></ImageView>
+
+        <EditText
+            android:id="@+id/edtsoLuongMuaMN"
+            android:layout_width="80dp"
+            android:layout_height="40dp"
+            android:gravity="center"
+            android:text="1"
+            android:background="@drawable/boder_edt"
+            android:layout_toLeftOf="@+id/imgCongMN"
+            android:layout_centerVertical="true"
+            android:inputType="number"
+            android:digits="0123456789"
+            android:textIsSelectable="false"
+            android:textCursorDrawable="@null"
+            android:imeOptions="actionDone" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/imgTruMN"
+            android:layout_toLeftOf="@+id/edtsoLuongMuaMN"
+            android:src="@drawable/dautru"
+            android:layout_centerVertical="true"></ImageView>
+    </RelativeLayout>
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Mua ngay"
+        android:backgroundTint="#E48B07"
+        android:id="@+id/btnMuaMN"></Button>
+
+
+</LinearLayout>

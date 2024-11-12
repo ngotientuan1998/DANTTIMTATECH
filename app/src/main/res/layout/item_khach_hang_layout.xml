@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="165dp"
+    app:cardCornerRadius="8dp"
+    app:cardElevation="10dp"
+    app:cardUseCompatPadding="true">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="16dp">
+
+        <ImageView
+            android:id="@+id/imgKhachHangItem"
+            android:layout_width="78dp"
+            android:layout_height="72dp"
+            android:scaleType="centerCrop"
+            android:src="@drawable/pepel" />
+
+        <TextView
+            android:id="@+id/tvTenKhachHangItem"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toEndOf="@+id/imgKhachHangItem"
+            android:layout_marginLeft="5dp"
+            android:text="Tên khách hàng"
+            android:textSize="18sp"
+            android:textColor="@android:color/black" />
+
+        <TextView
+            android:id="@+id/tvEmailKhachHangItem"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:layout_below="@+id/tvTenKhachHangItem"
+            android:layout_toEndOf="@+id/imgKhachHangItem"
+            android:text="Email"
+            android:textSize="14sp"
+            android:textColor="@android:color/darker_gray" />
+
+        <TextView
+            android:id="@+id/tvSdtKhachHangItem"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:layout_below="@+id/tvEmailKhachHangItem"
+            android:layout_toEndOf="@+id/imgKhachHangItem"
+            android:text="Số điện thoại"
+            android:textSize="14sp"
+            android:textColor="@android:color/darker_gray" />
+        <TextView
+            android:id="@+id/tvGioiTinhKhachHangItem"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:layout_below="@+id/tvSdtKhachHangItem"
+            android:layout_toEndOf="@+id/imgKhachHangItem"
+            android:text="Giới tính"
+            android:textSize="14sp"
+            android:textColor="@android:color/darker_gray" />
+
+        <TextView
+            android:id="@+id/tvNamSinhKhachHangItem"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:layout_below="@+id/tvGioiTinhKhachHangItem"
+            android:layout_toEndOf="@+id/imgKhachHangItem"
+            android:text="Năm sinh"
+            android:textSize="14sp"
+            android:textColor="@android:color/darker_gray" />
+
+        <TextView
+            android:id="@+id/tvTrangThaiKhachHangItem"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:text="Trạng thái"
+            android:textSize="13sp"
+            android:textColor="#14EC1D" />
+
+        <Button
+            android:id="@+id/btnDongMoKhachHang"
+            android:layout_width="91dp"
+            android:layout_height="40dp"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true"
+            android:text="khóa"
+            android:backgroundTint="#FF9800"
+            android:textSize="18sp"
+            android:textColor="@color/white" />
+
+    </RelativeLayout>
+
+</androidx.cardview.widget.CardView>

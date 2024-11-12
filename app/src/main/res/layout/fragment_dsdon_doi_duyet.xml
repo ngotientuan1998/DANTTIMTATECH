@@ -1,0 +1,81 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="frament.DsdonDoiDuyet">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:background="#FF9800"
+        >
+
+        <ImageView
+            android:id="@+id/img_thoatDonDoiD"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:src="@drawable/thoat"></ImageView>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="Danh sách đơn đợi duyệt"
+            android:textColor="@color/white"
+            android:textSize="25sp"
+            android:textStyle="bold"></TextView>
+    </RelativeLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="120dp"
+        android:layout_marginTop="10dp"
+        android:padding="10dp"
+        android:orientation="vertical"
+        android:background="@drawable/boder_4canh">
+        <SearchView
+            android:id="@+id/TimKiemDonDoiD"
+            android:layout_width="300dp"
+            android:layout_height="40dp"
+            android:layout_gravity="center_horizontal"
+            android:background="@drawable/boder_edt"></SearchView>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:orientation="horizontal">
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/btnDonDaDuyet"
+                android:textSize="20sp"
+                android:text="Đơn đã duyệt"></Button>
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/btnDonDaHuy"
+                android:layout_marginLeft="30dp"
+                android:textSize="20sp"
+                android:text="Đơn đã hủy"></Button>
+        </LinearLayout>
+
+
+    </LinearLayout>
+    <TextView
+        android:layout_width="200dp"
+        android:layout_height="60dp"
+        android:id="@+id/TvTongDonDoiDuyet"
+        android:textStyle="bold"
+        android:padding="9dp"
+        android:layout_marginTop="7dp"
+        android:textSize="20sp"
+        android:layout_gravity="center_horizontal"
+        android:background="@drawable/boder_edt"
+        android:text="Tổng đơn"></TextView>
+    <androidx.recyclerview.widget.RecyclerView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/ryc_donDoiDuyet"></androidx.recyclerview.widget.RecyclerView>
+
+</LinearLayout>

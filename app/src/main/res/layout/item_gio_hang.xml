@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/boder_edt"
+    android:padding="15dp">
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Tên cửa hàng "
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:id="@+id/TvTenCuaHangGHItem"></TextView>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="5dp"
+        android:text="Xem cửa hàng "
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:background="@drawable/boder_edt"
+        android:layout_alignParentRight="true"
+        android:id="@+id/TvXemCuaHangGHItem"></TextView>
+    <CheckBox
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/chkChonSPGHItem"
+        android:layout_marginTop="20dp"
+       android:layout_below="@+id/TvXemCuaHangGHItem"></CheckBox>
+    <ImageView
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:src="@drawable/laptop"
+        android:layout_below="@+id/TvXemCuaHangGHItem"
+        android:layout_toRightOf="@+id/chkChonSPGHItem"
+        android:id="@+id/imgAnhSPGHItem"></ImageView>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Tên sản phẩm "
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:layout_below="@+id/TvXemCuaHangGHItem"
+        android:layout_toRightOf="@+id/imgAnhSPGHItem"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="8dp"
+        android:id="@+id/TvTenSpGHItem"></TextView>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Gía giảm "
+        android:textSize="18sp"
+        android:layout_below="@+id/TvTenSpGHItem"
+        android:layout_toRightOf="@+id/imgAnhSPGHItem"
+        android:layout_marginLeft="8dp"
+        android:id="@+id/TvGiaGiamSpGHItem"></TextView>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Gía sản phẩm "
+        android:textSize="18sp"
+        android:layout_below="@+id/TvGiaGiamSpGHItem"
+        android:layout_toRightOf="@+id/imgAnhSPGHItem"
+        android:layout_marginLeft="8dp"
+        android:id="@+id/TvGiaSpGHItem"></TextView>
+<ImageView
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:src="@drawable/daucong"
+    android:layout_below="@+id/TvGiaSpGHItem"
+    android:id="@+id/imgCongSPGHItem"
+    android:layout_marginTop="5dp"
+    android:layout_toRightOf="@+id/imgAnhSPGHItem"></ImageView>
+    <EditText
+        android:id="@+id/edtSoLuongMuaSPGHItem"
+        android:layout_width="80dp"
+        android:layout_height="40dp"
+        android:gravity="center"
+        android:text="1"
+        android:background="@drawable/boder_edt"
+        android:layout_below="@+id/TvGiaSpGHItem"
+        android:layout_toRightOf="@+id/imgCongSPGHItem"
+        android:inputType="number"
+        android:digits="0123456789"
+        android:textIsSelectable="false"
+        android:textCursorDrawable="@null"
+        android:imeOptions="actionDone" />
+
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Số lượng "
+        android:textSize="18sp"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/TvGiaSpGHItem"
+        android:id="@+id/tvsoLuongGHItem"></TextView>
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/dautru"
+        android:layout_below="@+id/TvGiaSpGHItem"
+        android:id="@+id/imgTruSPGHItem"
+        android:layout_marginTop="5dp"
+        android:layout_toRightOf="@+id/edtSoLuongMuaSPGHItem"></ImageView>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Tổng tiền 3 sp "
+        android:textStyle="bold"
+        android:textSize="19sp"
+        android:layout_marginTop="15dp"
+        android:layout_below="@+id/edtSoLuongMuaSPGHItem"
+        android:id="@+id/tvTongTienSPGHItem"></TextView>
+
+</RelativeLayout>

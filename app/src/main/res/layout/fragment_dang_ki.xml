@@ -1,0 +1,98 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+    tools:context="frament.DangKiFragment">
+    <ImageView
+        android:layout_width="120dp"
+        android:layout_height="100dp"
+        android:src="@drawable/sunnyteam"></ImageView>
+    <EditText
+        android:layout_width="300dp"
+        android:layout_height="60dp"
+        android:id="@+id/edt_emailDK"
+        android:padding="10dp"
+        android:hint="Email"
+        android:drawableRight="@drawable/baseline_email_24"
+        android:layout_gravity="center_horizontal"
+        android:background="@drawable/boder_edt"></EditText>
+    <RelativeLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <EditText
+            android:layout_width="300dp"
+            android:layout_height="60dp"
+            android:id="@+id/edt_MkDK"
+            android:padding="10dp"
+            android:hint="Mật khẩu"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/boder_edt"
+            android:layout_gravity="center_horizontal"
+            android:inputType="textPassword" />
+
+        <ImageView
+            android:id="@+id/eye_iconMK"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@id/edt_MkDK"
+            android:layout_alignRight="@id/edt_MkDK"
+            android:layout_alignTop="@id/edt_MkDK"
+            android:padding="10dp"
+            android:src="@drawable/matnham"
+            android:contentDescription="Toggle password visibility" />
+    </RelativeLayout>
+    <RelativeLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <EditText
+            android:layout_width="300dp"
+            android:layout_height="60dp"
+            android:id="@+id/edt_LMkDK"
+            android:padding="10dp"
+            android:hint=" Nhập lại mật khẩu"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/boder_edt"
+            android:layout_gravity="center_horizontal"
+            android:inputType="textPassword" />
+
+        <ImageView
+            android:id="@+id/eye_iconLMK"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@id/edt_LMkDK"
+            android:layout_alignRight="@id/edt_LMkDK"
+            android:layout_alignTop="@id/edt_LMkDK"
+            android:padding="10dp"
+            android:src="@drawable/matnham"
+            android:contentDescription="Toggle password visibility" />
+    </RelativeLayout>
+    <Spinner
+        android:layout_width="200dp"
+        android:layout_height="35dp"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/boder_edt"
+        android:id="@+id/spinnerVaiTro"></Spinner>
+
+    <Button
+        android:layout_width="200dp"
+        android:layout_height="60dp"
+        android:layout_marginTop="10dp"
+        android:text="Đăng kí"
+        android:layout_gravity="center_horizontal"
+        android:backgroundTint="#EA981D"
+        android:id="@+id/btn_DangKi"></Button>
+    <ProgressBar
+        android:id="@+id/ProgressBarDangKi"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:visibility="gone"
+        android:layout_below="@id/btn_DangKi"
+        android:layout_marginTop="16dp"/>
+</LinearLayout>

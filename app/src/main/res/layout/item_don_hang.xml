@@ -1,0 +1,214 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/cardView"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="8dp"
+    app:cardCornerRadius="15dp"
+    app:cardElevation="10dp">
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="8dp">
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="ID đơn hàng"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:id="@+id/tvIDdonHangMua"></TextView>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Tên khách hàng"
+        android:textSize="18sp"
+        android:layout_below="@+id/tvIDdonHangMua"
+        android:textStyle="bold"
+        android:id="@+id/tvTenKhachHangMua"></TextView>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Số điện thoại khách hàng"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:layout_below="@+id/tvTenKhachHangMua"
+        android:id="@+id/tvSDTKhachHangMua"></TextView>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Email khách hàng"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:layout_below="@+id/tvSDTKhachHangMua"
+        android:id="@+id/tvEmailKhachHangMua"></TextView>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Địa chỉ chi tiết"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:layout_below="@+id/tvEmailKhachHangMua"
+        android:id="@+id/tvDiaChiTietKHMua"></TextView>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Xã "
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:layout_marginLeft="15dp"
+        android:layout_below="@+id/tvEmailKhachHangMua"
+        android:layout_toRightOf="@+id/tvDiaChiTietKHMua"
+        android:id="@+id/tvXaKHMua"></TextView>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Huyện "
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:layout_below="@+id/tvXaKHMua"
+        android:id="@+id/tvHuyenKHMua"></TextView>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Tỉnh "
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:layout_marginLeft="10dp"
+        android:layout_below="@+id/tvXaKHMua"
+        android:layout_toRightOf="@+id/tvHuyenKHMua"
+        android:id="@+id/tvTinhKHMua"></TextView>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Ngày đặt"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:layout_marginLeft="10dp"
+        android:layout_below="@+id/tvTinhKHMua"
+        android:id="@+id/tvNgayDatMua"></TextView>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Ngày duyệt"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:layout_marginLeft="10dp"
+        android:layout_below="@+id/tvNgayDatMua"
+        android:id="@+id/tvNgayDuyet"></TextView>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Ngày giao"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:layout_marginLeft="10dp"
+        android:layout_below="@+id/tvNgayDuyet"
+        android:id="@+id/tvNgayDangGiao"></TextView>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Ngày nhận"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:layout_marginLeft="10dp"
+        android:layout_below="@+id/tvNgayDangGiao"
+        android:id="@+id/tvNgayNhan"></TextView>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Số lượng sản phẩm "
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:layout_marginLeft="10dp"
+        android:layout_below="@+id/tvNgayNhan"
+        android:id="@+id/tvSoLuongSpMua"></TextView>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Tổng  giá"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:layout_below="@+id/tvSoLuongSpMua"
+        android:id="@+id/tvTongGiaSPMua"
+        ></TextView>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Trạng thái đơn hàng"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:layout_below="@+id/tvTongGiaSPMua"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/tvTrangThaiSPMua"
+        ></TextView>
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/layoutXemChiTietVaHuy"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/tvTrangThaiSPMua"
+        android:orientation="horizontal">
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Xem chi tiết"
+            android:id="@+id/btnXemChiTietDonHang"
+            android:layout_below="@+id/tvTrangThaiSPMua"></Button>
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Hủy đơn hàng "
+            android:id="@+id/btnHuyDonHang"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@+id/tvTrangThaiSPMua"></Button>
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Nhận"
+            android:id="@+id/btnNhanDonHang"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@+id/tvTrangThaiSPMua"></Button>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/layoutMenu2"
+        android:layout_below="@+id/layoutXemChiTietVaHuy">
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Duyệt"
+            android:id="@+id/btnDuyetDonHangMua"
+            ></Button>
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Bàn giao cho BVC"
+            android:id="@+id/btnBGBVCHangMua"
+            ></Button>
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Hủy duyệt "
+            android:layout_marginLeft="10dp"
+            android:id="@+id/btnHuyDuyetDonHangMua"></Button>
+    </LinearLayout>
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/layoutMenu2"
+            android:layout_centerHorizontal="true"
+            android:id="@+id/btnDanhGiaDonHangMua"
+            android:text="Đánh giá"></Button>
+
+</RelativeLayout>
+</androidx.cardview.widget.CardView>

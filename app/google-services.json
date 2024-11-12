@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "34371260952",
+    "project_id": "maychuduan1",
+    "storage_bucket": "maychuduan1.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:34371260952:android:d5b40eeca020f17b5c296d",
+        "android_client_info": {
+          "package_name": "com.example.appduan1"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDES_CEmG7ura2woIrVlz-3o4D0cNySETg"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:34371260952:android:2eaf76b44d8e3c695c296d",
+        "android_client_info": {
+          "package_name": "com.example.sunnyteam_santhuongmai"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDES_CEmG7ura2woIrVlz-3o4D0cNySETg"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

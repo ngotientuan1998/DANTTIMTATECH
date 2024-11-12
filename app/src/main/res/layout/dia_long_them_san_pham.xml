@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/boder_edt"
+    android:padding="10dp">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <ImageView
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:src="@drawable/baseline_close_24"
+            android:id="@+id/imgDongSpThem"
+            android:layout_alignParentRight="true"></ImageView>
+
+        <EditText
+            android:id="@+id/edtTenSPThem"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/imgDongSpThem"
+            android:hint="Ten"></EditText>
+
+        <TextView
+            android:id="@+id/tvloaiSp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/edtTenSPThem"
+            android:text="Loại Hàng:"
+            android:textSize="18sp"
+            android:textStyle="bold"></TextView>
+
+        <Spinner
+            android:id="@+id/spinnerLoaiSPThem"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tvloaiSp"
+            android:layout_alignParentLeft="true"></Spinner>
+
+        <EditText
+            android:id="@+id/edtGiaSPThem"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/spinnerLoaiSPThem"
+            android:hint="giá"></EditText>
+
+        <EditText
+            android:id="@+id/edtRAmSPThem"
+            android:layout_width="170dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/spinnerLoaiSPThem"
+            android:layout_alignParentRight="true"
+            android:hint="Ram"></EditText>
+
+        <EditText
+            android:id="@+id/edtGiamGiaSPThem"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/edtGiaSPThem"
+            android:hint="giảm giá"></EditText>
+
+        <EditText
+            android:id="@+id/edtCPUSPThem"
+            android:layout_width="170dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/edtGiaSPThem"
+            android:layout_alignParentRight="true"
+            android:hint="CPU"></EditText>
+
+        <EditText
+            android:id="@+id/edtsoLuongSPThem"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/edtGiamGiaSPThem"
+            android:hint="số lượng"></EditText>
+
+        <EditText
+            android:id="@+id/edtoCungSPThem"
+            android:layout_width="190dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/edtsoLuongSPThem"
+            android:layout_alignParentLeft="true"
+            android:hint="ổ cứng"></EditText>
+
+        <EditText
+            android:id="@+id/edtCartSPThem"
+            android:layout_width="185dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/edtsoLuongSPThem"
+            android:layout_alignParentRight="true"
+            android:hint="Cart"></EditText>
+
+        <EditText
+            android:id="@+id/edtMhinhSPThem"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/edtoCungSPThem"
+            android:layout_alignParentRight="true"
+            android:hint="Màn hình"></EditText>
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/rycAnhSPThem"
+            android:layout_width="350dp"
+            android:layout_height="250dp"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@+id/edtMhinhSPThem"></androidx.recyclerview.widget.RecyclerView>
+
+
+        <Button
+            android:id="@+id/btnTaiAnhSPThem"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/rycAnhSPThem"
+            android:layout_centerHorizontal="true"
+            android:text="Tải ảnh lên"></Button>
+
+        <EditText
+            android:id="@+id/edtMoTaThemSP"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/btnTaiAnhSPThem"
+            android:gravity="start|top"
+            android:hint="mô tả chi tiết "
+            android:inputType="textMultiLine"
+            android:lines="2"
+            android:minLines="3"
+            android:scrollbars="vertical" />
+
+        <Button
+            android:id="@+id/btnThemSP"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/edtMoTaThemSP"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="10dp"
+            android:text="Thêm sản phẩm"></Button>
+    </RelativeLayout>
+
+</ScrollView>
+

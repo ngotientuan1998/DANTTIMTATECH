@@ -1,0 +1,266 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="7dp"
+    tools:context=".ChiTietSanPham">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+    <ImageView
+        android:id="@+id/img_thoatChiTietSP"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/thoat"></ImageView>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/ryc_ds_anh_sp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/img_thoatChiTietSP"
+        ></androidx.recyclerview.widget.RecyclerView>
+
+
+    <Button
+        android:id="@+id/btnChayQC"
+        android:layout_width="180dp"
+        android:layout_height="45dp"
+        android:layout_below="@+id/ryc_ds_anh_sp"
+        android:layout_centerInParent="true"
+        android:layout_gravity="center_horizontal"
+        android:backgroundTint="#EA981D"
+        android:text="Chạy quảng cáo"
+        android:textSize="17sp"></Button>
+
+
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/im_cham"
+        android:layout_marginTop="10dp"
+        android:src="@drawable/cham"
+        android:layout_below="@+id/btnChayQC"></ImageView>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Tên sản phẩm"
+        android:textSize="15sp"
+        android:id="@+id/Tvtensp_ctsp"
+        android:layout_below="@+id/btnChayQC"
+        android:layout_toRightOf="@+id/im_cham"
+        android:textStyle="bold"
+        ></TextView>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="mã sản phẩm"
+        android:textSize="15sp"
+        android:id="@+id/Tvmasp_ctsp"
+        android:layout_below="@+id/btnChayQC"
+        android:layout_alignParentRight="true"
+        android:textStyle="bold"
+        ></TextView>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="giá  sản phẩm"
+        android:textSize="15sp"
+        android:id="@+id/TvGiasp_ctsp"
+        android:layout_below="@+id/Tvtensp_ctsp"
+        android:layout_marginLeft="40dp"
+        android:textStyle="bold"
+        ></TextView>
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="giảm giá"
+        android:textSize="15sp"
+        android:id="@+id/TvgiamGiasp_ctsp"
+        android:layout_below="@+id/Tvmasp_ctsp"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="20dp"
+        android:textStyle="bold"
+        ></TextView>
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="có sẵn"
+        android:textSize="15sp"
+        android:id="@+id/TvcoSansp_ctsp"
+        android:layout_below="@+id/TvgiamGiasp_ctsp"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="20dp"
+        android:textStyle="bold"
+        ></TextView>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="lượt mua"
+        android:textSize="15sp"
+        android:id="@+id/TvluotMuasp_ctsp"
+        android:layout_below="@+id/TvGiasp_ctsp"
+        android:layout_marginLeft="40dp"
+        android:textStyle="bold"
+        ></TextView>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Cpu"
+        android:textSize="15sp"
+        android:id="@+id/TvCPUsp_ctsp"
+        android:layout_below="@+id/TvluotMuasp_ctsp"
+        android:textStyle="bold"
+        ></TextView>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Điểm chạy quảng cáo:"
+        android:textSize="12sp"
+        android:textColor="#DD880B"
+        android:id="@+id/TvDCQC_ctsp"
+        android:layout_marginTop="50dp"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/TvluotMuasp_ctsp"
+        android:textStyle="bold"
+        ></TextView>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Ram"
+        android:textSize="15sp"
+        android:id="@+id/TvRAMsp_ctsp"
+        android:layout_below="@+id/TvCPUsp_ctsp"
+        android:textStyle="bold"
+        ></TextView>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="ổ cứng"
+        android:textSize="15sp"
+        android:id="@+id/TvOcungsp_ctsp"
+        android:layout_below="@+id/TvRAMsp_ctsp"
+        android:textStyle="bold"
+        ></TextView>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Cart"
+        android:textSize="15sp"
+        android:id="@+id/TvCartsp_ctsp"
+        android:layout_below="@+id/TvOcungsp_ctsp"
+        android:textStyle="bold"
+        ></TextView>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="M.hình"
+        android:textSize="15sp"
+        android:id="@+id/TvMhinhsp_ctsp"
+        android:layout_below="@+id/TvCartsp_ctsp"
+        android:textStyle="bold"
+        ></TextView>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Giỏ hàng"
+        android:textSize="15sp"
+        android:id="@+id/tvGioHang"
+        android:layout_marginLeft="45dp"
+        android:layout_below="@+id/TvMhinhsp_ctsp"
+        android:textStyle="bold"
+        ></TextView>
+
+<ImageView
+    android:layout_width="50dp"
+    android:layout_height="50dp"
+    android:layout_marginLeft="45dp"
+    android:src="@drawable/baseline_shopping_basket_24"
+    android:layout_below="@+id/tvGioHang"
+    android:id="@+id/imgThemVaoGioHang"></ImageView>
+
+    <Button
+        android:id="@+id/btnMuaSP"
+        android:layout_width="180dp"
+        android:layout_height="45dp"
+        android:layout_below="@+id/tvGioHang"
+        android:layout_centerInParent="true"
+        android:layout_gravity="center_horizontal"
+        android:backgroundTint="#EA981D"
+        android:text="Mua ngay"
+        android:textSize="17sp"></Button>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="75dp"
+        android:id="@+id/layout_shop_ctsp"
+        android:layout_below="@+id/imgThemVaoGioHang"
+        android:padding="12dp"
+        android:background="@drawable/boder_edt">
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/shop"
+            android:layout_alignParentLeft="true"
+            android:id="@+id/imgAnhShopctsp"
+            ></ImageView>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Tên shop"
+            android:layout_marginTop="10dp"
+            android:layout_toRightOf="@+id/imgAnhShopctsp"
+            android:id="@+id/tvTenShopctsp"></TextView>
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:backgroundTint="@null"
+            android:background="@drawable/boder_edt"
+            android:text="xem shop"
+            android:layout_alignParentRight="true"
+            android:id="@+id/btnXemShopctsp"></Button>
+
+    </RelativeLayout>
+
+
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/im_cham2"
+        android:layout_marginTop="10dp"
+        android:src="@drawable/cham"
+        android:layout_below="@+id/layout_shop_ctsp"></ImageView>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Chi tiết sản phẩm"
+        android:textSize="15sp"
+        android:id="@+id/TvXemChiTiet_ctsp"
+        android:layout_toRightOf="@+id/im_cham2"
+        android:layout_below="@+id/layout_shop_ctsp"
+        android:layout_marginLeft="5dp"
+        android:layout_marginTop="10dp"
+        android:textStyle="bold"
+        ></TextView>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="chi tiết sản phẩm"
+        android:layout_below="@+id/TvXemChiTiet_ctsp"
+        android:id="@+id/Tv_ChiTietSanPham_ctsp"></TextView>
+        <androidx.recyclerview.widget.RecyclerView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/Tv_ChiTietSanPham_ctsp"
+            android:id="@+id/ryc_DSdanhGia"></androidx.recyclerview.widget.RecyclerView>
+    </RelativeLayout>
+</ScrollView>

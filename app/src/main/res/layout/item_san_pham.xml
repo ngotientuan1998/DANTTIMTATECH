@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="182dp"
+    android:layout_height="wrap_content"
+    app:cardCornerRadius="8dp"
+    app:cardElevation="10dp"
+    app:cardUseCompatPadding="true">
+   <RelativeLayout
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+       >
+
+       <ImageView
+           android:layout_width="match_parent"
+           android:layout_height="130dp"
+           android:src="@drawable/laptop"
+           android:id="@+id/imAnhSP"></ImageView>
+       <TextView
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:text="Tên sản phẩm"
+           android:layout_marginLeft="5dp"
+           android:layout_below="@+id/imAnhSP"
+           android:textSize="12sp"
+           android:textStyle="bold"
+           android:textColor="@color/black"
+           android:id="@+id/tvTenSP"></TextView>
+       <TextView
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:text="Giảm giá"
+           android:layout_marginLeft="5dp"
+           android:layout_below="@+id/tvTenSP"
+           android:textSize="12sp"
+           android:textStyle="bold"
+           android:textColor="#EA9417"
+           android:id="@+id/tvGiamGiaSP"></TextView>
+
+       <TextView
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:text="giá"
+           android:layout_marginLeft="5dp"
+           android:layout_below="@+id/tvGiamGiaSP"
+           android:textSize="17sp"
+           android:textStyle="bold"
+           android:textColor="#EA9417"
+           android:id="@+id/tvGiaSP"></TextView>
+
+       <TextView
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:text="đã bán"
+           android:layout_marginLeft="5dp"
+           android:layout_below="@+id/imAnhSP"
+           android:layout_alignParentRight="true"
+           android:textSize="11sp"
+           android:textStyle="bold"
+           android:textColor="@color/black"
+           android:layout_marginRight="5dp"
+           android:layout_marginTop="5dp"
+           android:id="@+id/tvSoLuongBanSP"></TextView>
+       <Button
+           android:layout_width="match_parent"
+           android:layout_height="40dp"
+           android:text="sửa"
+           android:layout_marginTop="33dp"
+           android:layout_below="@+id/tvSoLuongBanSP"
+           android:id="@+id/btnSuaSanPham"></Button>
+
+   </RelativeLayout>
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/imXoaSanPhamSP"
+        android:src="@drawable/baseline_close_24"></ImageView>
+
+</androidx.cardview.widget.CardView>

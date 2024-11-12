@@ -1,0 +1,157 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="15dp"
+    tools:context=".HoSo">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/imThoatHoSo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/thoat"></ImageView>
+
+        <ImageView
+            android:id="@+id/imAnhHoSo"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_centerInParent="true"
+            android:layout_gravity="center_horizontal"
+            android:src="@drawable/baseline_co_present_24"></ImageView>
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/tvID"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="ID "
+        android:textSize="20sp"></TextView>
+
+    <TextView
+        android:id="@+id/tvHoVaTen"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Họ và tên"
+        android:textSize="20sp"></TextView>
+
+    <TextView
+        android:id="@+id/tvTinh"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Tỉnh"
+        android:textSize="20sp"></TextView>
+
+    <TextView
+        android:id="@+id/tvHuyen"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Huyện"
+        android:textSize="20sp"></TextView>
+
+    <TextView
+        android:id="@+id/tvXa"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Xã"
+        android:textSize="20sp"></TextView>
+
+    <TextView
+        android:id="@+id/tvDiaChiChiTiet"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Địa chỉ Chi tiết"
+        android:textSize="20sp"></TextView>
+
+    <TextView
+        android:id="@+id/tvSoDienThoai"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="số điện thoại "
+        android:textSize="20sp"></TextView>
+
+    <TextView
+        android:id="@+id/tvEmail"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Email"
+        android:textSize="20sp"></TextView>
+
+    <TextView
+        android:id="@+id/tvVaiTro"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Vai trò"
+        android:textSize="20sp"></TextView>
+
+    <TextView
+        android:id="@+id/tvNTNT"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Ngày tháng năm tạo"
+        android:textSize="20sp"></TextView>
+
+    <TextView
+        android:id="@+id/tvGioiTinh"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="giới tính"
+        android:textSize="20sp"></TextView>
+
+    <TextView
+        android:id="@+id/tvNamSinh"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Năm sinh"
+        android:textSize="20sp"></TextView>
+
+    <TextView
+        android:id="@+id/tvTheoDoi"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Theo dõi"
+        android:textSize="20sp"></TextView>
+
+    <Button
+        android:id="@+id/btnSuaHoSo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_gravity="center_horizontal"
+        android:text="Sửa thông tin"></Button>
+
+    <Button
+        android:id="@+id/btnDSSPShopHoSo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_gravity="center_horizontal"
+        android:text="Danh sách sản phẩm"></Button>
+
+
+    <Button
+        android:id="@+id/btnDSSPchayQuangCaoHoSo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:text="Danh sách sản phẩm chạy quảng cáo"></Button>
+
+    <Button
+        android:id="@+id/btnDoiMatKhauHoSo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:text="Đổi mật khẩu"></Button>
+
+    <Button
+        android:id="@+id/btnDangXuat"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:text="Đăng xuất"></Button>
+
+</LinearLayout>

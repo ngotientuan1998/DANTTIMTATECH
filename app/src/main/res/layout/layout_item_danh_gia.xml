@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="10dp"
+    >
+<ImageView
+    android:layout_width="45dp"
+    android:layout_height="45dp"
+    android:src="@drawable/pepel"
+    android:id="@+id/img_AnhKhachDG"></ImageView>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Tên khách"
+        android:id="@+id/tvTenKhachDG"
+        android:textSize="17sp"
+        android:layout_marginLeft="5dp"
+        android:layout_marginTop="10dp"
+        android:textStyle="bold"
+        android:layout_toRightOf="@+id/img_AnhKhachDG"></TextView>
+    
+    <ImageView
+        android:layout_width="100dp"
+        android:layout_height="45dp"
+        android:id="@+id/img_saoDG"
+        android:layout_below="@+id/tvTenKhachDG"
+        android:src="@drawable/namsao"></ImageView>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/img_saoDG"
+        android:text="Sản phẩm tốt"
+        android:textSize="17sp"
+        android:textStyle="bold"
+        android:id="@+id/tvYKienDongGopDG"></TextView>
+    <androidx.recyclerview.widget.RecyclerView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_below="@+id/tvYKienDongGopDG"
+        android:id="@+id/rycDsAnhspDG"></androidx.recyclerview.widget.RecyclerView>
+    
+</RelativeLayout>

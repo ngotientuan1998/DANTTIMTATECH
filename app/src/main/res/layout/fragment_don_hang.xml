@@ -1,0 +1,115 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="frament.donHang">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:background="#FF9800"
+        >
+
+        <ImageView
+            android:id="@+id/img_thoatDonHang"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:src="@drawable/thoat"></ImageView>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="Đơn hàng của bạn"
+            android:textColor="@color/white"
+            android:textSize="25sp"
+            android:textStyle="bold"></TextView>
+    </RelativeLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:layout_marginTop="10dp"
+        android:padding="10dp"
+        android:orientation="vertical"
+        android:background="@drawable/boder_4canh">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textStyle="bold"
+            android:padding="9dp"
+            android:textSize="25sp"
+            android:layout_gravity="center_horizontal"
+            android:textColor="@color/white"
+            android:text="SUNNY TEAM"></TextView>
+        <TextView
+            android:layout_width="200dp"
+            android:layout_height="60dp"
+            android:id="@+id/TvTongDonAll"
+            android:textStyle="bold"
+            android:padding="9dp"
+            android:textSize="20sp"
+            android:layout_gravity="center_horizontal"
+            android:background="@drawable/boder_edt"
+            android:text="Tổng đơn"></TextView>
+
+    </LinearLayout>
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Danh sách đơn đợi duyệt"
+        android:textSize="20sp"
+        android:backgroundTint="#FF9800"
+        android:layout_gravity="center_horizontal"
+        android:id="@+id/btnDsddd"></Button>
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Danh sách đơn đang vận chuyển"
+        android:textSize="20sp"
+        android:backgroundTint="#FF9800"
+        android:layout_gravity="center_horizontal"
+        android:id="@+id/btnDsddvc"></Button>
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Danh sách đơn thành công"
+        android:textSize="20sp"
+        android:backgroundTint="#FF9800"
+        android:layout_gravity="center_horizontal"
+        android:id="@+id/btnDsdtc"></Button>
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Danh sách đơn hoàn"
+        android:textSize="20sp"
+        android:backgroundTint="#FF9800"
+        android:layout_gravity="center_horizontal"
+        android:id="@+id/btnDsdh"></Button>
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Đơn đang chạy quảng cáo"
+        android:textSize="20sp"
+        android:backgroundTint="#FF9800"
+        android:layout_gravity="center_horizontal"
+        android:id="@+id/btnDdcqc"></Button>
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Danh sách đơn đang vận chuyển"
+        android:textSize="20sp"
+        android:backgroundTint="#FF9800"
+        android:layout_gravity="center_horizontal"
+        android:id="@+id/btnDsddvcKH"></Button>
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Danh sách đơn đã mua"
+        android:textSize="20sp"
+        android:backgroundTint="#FF9800"
+        android:layout_gravity="center_horizontal"
+        android:id="@+id/btnDsddmKH"></Button>
+
+</LinearLayout>

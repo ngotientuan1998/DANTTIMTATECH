@@ -1,0 +1,174 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="7dp"
+    tools:context="frament.chiTietSanPham">
+
+    <ImageView
+        android:id="@+id/img_thoatChiTietSP"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/thoat"></ImageView>
+
+    <ImageView
+        android:id="@+id/img_anhSanPham"
+        android:layout_width="match_parent"
+        android:layout_height="250dp"
+        android:src="@drawable/laptop"></ImageView>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/ryc_ds_ct_sp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/img_anhSanPham"></androidx.recyclerview.widget.RecyclerView>
+
+
+    <Button
+        android:id="@+id/btnChayQC"
+        android:layout_width="180dp"
+        android:layout_height="45dp"
+        android:layout_below="@+id/ryc_ds_ct_sp"
+        android:layout_centerInParent="true"
+        android:layout_gravity="center_horizontal"
+        android:backgroundTint="#EA981D"
+        android:text="Chạy quảng cáo"
+        android:textSize="17sp"></Button>
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/im_cham"
+        android:layout_marginTop="10dp"
+        android:src="@drawable/cham"
+        android:layout_below="@+id/btnChayQC"></ImageView>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Tên sản phẩm"
+        android:textSize="15sp"
+        android:id="@+id/Tvtensp_ctsp"
+        android:layout_below="@+id/btnChayQC"
+        android:layout_toRightOf="@+id/im_cham"
+        android:textStyle="bold"
+        ></TextView>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="mã sản phẩm sản phẩm"
+        android:textSize="15sp"
+        android:id="@+id/Tvmasp_ctsp"
+        android:layout_below="@+id/btnChayQC"
+       android:layout_alignParentRight="true"
+        android:textStyle="bold"
+        ></TextView>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="giá phẩm sản phẩm"
+        android:textSize="15sp"
+        android:id="@+id/TvGiasp_ctsp"
+        android:layout_below="@+id/Tvtensp_ctsp"
+        android:layout_marginLeft="40dp"
+        android:textStyle="bold"
+        ></TextView>
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="giảm giá"
+        android:textSize="15sp"
+        android:id="@+id/TvgiamGiasp_ctsp"
+        android:layout_below="@+id/Tvmasp_ctsp"
+       android:layout_alignParentRight="true"
+        android:layout_marginRight="20dp"
+        android:textStyle="bold"
+        ></TextView>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="đánh giá"
+        android:textSize="15sp"
+    android:id="@+id/TvDanhGiasp_ctsp"
+    android:layout_below="@+id/TvGiasp_ctsp"
+    android:layout_marginLeft="40dp"
+    android:textStyle="bold"
+    ></TextView>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="có sẵn"
+        android:textSize="15sp"
+        android:id="@+id/TvcoSansp_ctsp"
+        android:layout_below="@+id/TvgiamGiasp_ctsp"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="20dp"
+        android:textStyle="bold"
+        ></TextView>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="lượt mua"
+        android:textSize="15sp"
+        android:id="@+id/TvluotMuasp_ctsp"
+        android:layout_below="@+id/TvDanhGiasp_ctsp"
+        android:layout_marginLeft="40dp"
+        android:textStyle="bold"
+        ></TextView>
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/im_cham2"
+        android:layout_marginTop="10dp"
+        android:src="@drawable/cham"
+        android:layout_below="@+id/TvluotMuasp_ctsp"></ImageView>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Chi tiết sản phẩm"
+        android:textSize="15sp"
+        android:id="@+id/TvXemChiTiet_ctsp"
+       android:layout_toRightOf="@+id/im_cham2"
+        android:layout_below="@+id/TvluotMuasp_ctsp"
+        android:layout_marginLeft="5dp"
+        android:textStyle="bold"
+        ></TextView>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="chi tiết sản phẩm"
+        android:layout_below="@+id/TvXemChiTiet_ctsp"
+        android:id="@+id/edt_ChiTietSanPham_ctsp"></EditText>
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/im_cham3"
+        android:layout_marginTop="10dp"
+        android:src="@drawable/cham"
+        android:layout_below="@+id/edt_ChiTietSanPham_ctsp"></ImageView>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Danh sách đánh giá"
+        android:textSize="15sp"
+        android:id="@+id/TvDaDanhGia_ctsp"
+        android:layout_toRightOf="@+id/im_cham2"
+        android:layout_below="@+id/edt_ChiTietSanPham_ctsp"
+        android:layout_marginLeft="5dp"
+        android:textStyle="bold"
+        ></TextView>
+<androidx.recyclerview.widget.RecyclerView
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:id="@+id/ryc_DSdanhGia"
+    android:layout_below="@+id/TvDaDanhGia_ctsp"></androidx.recyclerview.widget.RecyclerView>
+
+
+</RelativeLayout>

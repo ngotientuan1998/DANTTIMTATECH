@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="150dp"
+    app:cardCornerRadius="8dp"
+    app:cardElevation="10dp"
+    app:cardUseCompatPadding="true">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="16dp">
+
+        <ImageView
+            android:id="@+id/imgShopItem"
+            android:layout_width="78dp"
+            android:layout_height="72dp"
+            android:scaleType="centerCrop"
+            android:src="@drawable/shop" />
+
+        <TextView
+            android:id="@+id/tvTenCuaHangShopItem"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toEndOf="@+id/imgShopItem"
+            android:layout_marginLeft="5dp"
+            android:text="Tên cửa hàng"
+            android:textSize="18sp"
+            android:textColor="@android:color/black" />
+
+        <TextView
+            android:id="@+id/tvEmailShopItem"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:layout_below="@+id/tvTenCuaHangShopItem"
+            android:layout_toEndOf="@+id/imgShopItem"
+            android:text="Email"
+            android:textSize="14sp"
+            android:textColor="@android:color/darker_gray" />
+
+        <TextView
+            android:id="@+id/tvSdtShopItem"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:layout_below="@+id/tvEmailShopItem"
+            android:layout_toEndOf="@+id/imgShopItem"
+            android:text="Số điện thoại"
+            android:textSize="14sp"
+            android:textColor="@android:color/darker_gray" />
+        <TextView
+            android:id="@+id/tvTheoDoiShopItem"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:layout_below="@+id/tvSdtShopItem"
+            android:layout_toEndOf="@+id/imgShopItem"
+            android:text="Theo dõi"
+            android:textSize="14sp"
+            android:textColor="@android:color/darker_gray" />
+
+        <TextView
+            android:id="@+id/tvTrangThaiShopItem"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:text="Trạng thái"
+            android:textSize="15sp"
+            android:textColor="#14EC1D" />
+
+        <Button
+            android:id="@+id/btnDongMoShop"
+            android:layout_width="91dp"
+            android:layout_height="60dp"
+           android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true"
+            android:text="khóa"
+            android:backgroundTint="#FF9800"
+            android:textSize="18sp"
+            android:textColor="@color/white" />
+
+    </RelativeLayout>
+
+</androidx.cardview.widget.CardView>

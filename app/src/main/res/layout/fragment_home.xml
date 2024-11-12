@@ -1,0 +1,87 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="framentbottom.HomeFragment">
+
+   <RelativeLayout
+       android:layout_width="match_parent"
+       android:layout_height="110dp"
+      android:background="@drawable/boder_trangchu_1"
+       android:padding="10dp"
+      >
+      <TextView
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+         android:text="Sunny team"
+         android:textStyle="bold"
+          android:layout_centerHorizontal="true"
+          android:textColor="@color/white"
+         android:textSize="20sp"></TextView>
+
+      <ImageView
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+         android:src="@drawable/shop"
+          android:layout_alignParentRight="true"
+          android:id="@+id/img_shopHome"
+         android:layout_gravity="right"></ImageView>
+      <Button
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+         android:text="Xác thực"
+          android:backgroundTint="#E11F10"
+         android:id="@+id/btnXacThucTK"></Button>
+
+      <androidx.appcompat.widget.SearchView
+          android:id="@+id/TimKiemHome"
+          android:layout_width="300dp"
+          android:layout_height="40dp"
+          android:layout_alignParentBottom="true"
+          android:layout_centerInParent="true"
+          android:background="@drawable/boder_edt"></androidx.appcompat.widget.SearchView>
+   </RelativeLayout>
+
+   <ImageView
+       android:layout_width="400dp"
+       android:layout_height="160dp"
+      android:layout_marginTop="9dp"
+       android:id="@+id/img_slider"
+      android:layout_gravity="center_horizontal"
+       android:background="@drawable/banner"
+     ></ImageView>
+   <LinearLayout
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+       android:padding="10dp"
+       android:gravity="center_horizontal"
+       android:background="@drawable/boder_edt"
+      android:orientation="horizontal">
+      <TextView
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+         android:text="Loại hàng"
+         android:textSize="25sp"
+         android:textStyle="bold"></TextView>
+      <Spinner
+          android:layout_width="250dp"
+          android:layout_height="50dp"
+         android:background="@drawable/boder_edt"
+         android:layout_marginLeft="10dp"
+         android:id="@+id/spinnerLoaiHang"></Spinner>
+   </LinearLayout>
+
+   <TextView
+       android:layout_width="wrap_content"
+       android:layout_height="wrap_content"
+      android:text="Sản phẩm bán chạy"
+      android:textStyle="bold"
+      android:textSize="17sp"
+      android:layout_marginLeft="8dp"></TextView>
+   <androidx.recyclerview.widget.RecyclerView
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+      android:id="@+id/ryc_SPbc"></androidx.recyclerview.widget.RecyclerView>
+
+</LinearLayout>

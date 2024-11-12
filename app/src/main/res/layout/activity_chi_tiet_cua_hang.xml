@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="5dp"
+    tools:context=".ChiTietCuaHang">
+
+    <ImageView
+        android:id="@+id/imThoatShopChiTietTuDsShop"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/thoat"></ImageView>
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:text="CHI TIẾT SHOP"
+        android:textColor="#EA910E"
+        android:textSize="20sp"
+        android:textStyle="bold"></TextView>
+
+    <ImageView
+        android:id="@+id/imAnhShopChiTiet"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_below="@+id/imThoatShopChiTietTuDsShop"
+        android:src="@drawable/shop"></ImageView>
+
+    <TextView
+        android:id="@+id/tvTenShopChiTiet"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="5dp"
+        android:layout_marginTop="50dp"
+        android:layout_toRightOf="@+id/imAnhShopChiTiet"
+        android:text="Tên shop"
+        android:textSize="25sp"
+        android:textStyle="bold"></TextView>
+
+    <TextView
+        android:id="@+id/tvTheoDoiShopChiTiet"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tvTenShopChiTiet"
+        android:layout_marginLeft="5dp"
+        android:layout_toRightOf="@+id/imAnhShopChiTiet"
+        android:text="Theo dõi"
+        android:textSize="20sp"
+        android:textStyle="bold"></TextView>
+
+
+    <TextView
+        android:id="@+id/tvsdtShopChiTiet"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/imAnhShopChiTiet"
+        android:layout_marginLeft="5dp"
+        android:layout_marginTop="8dp"
+        android:text="Số điện thoại"
+        android:textSize="16sp"
+        android:textStyle="bold"></TextView>
+
+    <TextView
+        android:id="@+id/tvEmailShopChiTiet"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tvsdtShopChiTiet"
+        android:layout_marginLeft="5dp"
+        android:layout_marginTop="8dp"
+        android:text="email"
+        android:textSize="16sp"
+        android:textStyle="bold"></TextView>
+
+    <TextView
+        android:id="@+id/tvDiaChiShopChiTiet"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tvEmailShopChiTiet"
+        android:layout_marginLeft="5dp"
+        android:layout_marginTop="8dp"
+        android:text="Địa chỉ"
+        android:textSize="18sp"
+        android:textStyle="bold"></TextView>
+    <TextView
+        android:id="@+id/tvNgayTaoShopChiTiet"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tvDiaChiShopChiTiet"
+        android:layout_marginLeft="5dp"
+        android:layout_marginTop="8dp"
+        android:text="Ngày tạo shop"
+        android:textSize="18sp"
+        android:textStyle="bold"></TextView>
+
+    <TextView
+        android:id="@+id/tvIDshopChiTiet"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tvNgayTaoShopChiTiet"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="8dp"
+        android:text="ID shop"
+        android:textSize="18sp"
+        android:textStyle="bold"></TextView>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:text="Danh sách sản phẩm"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/tvDssPShopChiTiet"
+        android:layout_below="@+id/tvIDshopChiTiet"
+        ></TextView>
+  <androidx.recyclerview.widget.RecyclerView
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:layout_marginTop="10dp"
+      android:id="@+id/ryc_SanPhamShopChiTiet"
+      android:layout_below="@+id/tvDssPShopChiTiet"></androidx.recyclerview.widget.RecyclerView>
+
+
+</RelativeLayout>

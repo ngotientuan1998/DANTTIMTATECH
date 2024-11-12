@@ -1,0 +1,53 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="10dp"
+    tools:context="framentbottom.lichSuFragment">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+       >
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Ngày bắt đầu"
+            android:id="@+id/btnNBDLichSu"></Button>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Ngày bắt đầu "
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:id="@+id/tvNgayBatDauLichSu"
+            android:layout_below="@+id/btnNBDLichSu"></TextView>
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Ngày kết thúc"
+            android:layout_alignParentRight="true"
+            android:id="@+id/btnNKTLichSu"></Button>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Ngày kết thúc"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:layout_alignParentRight="true"
+            android:id="@+id/tvNgayKetThucLichSu"
+            android:layout_below="@+id/btnNKTLichSu"></TextView>
+    </RelativeLayout>
+<Button
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center_horizontal"
+    android:id="@+id/btnTimKiemLichSu"
+    android:text="Tìm kiếm"></Button>
+<androidx.recyclerview.widget.RecyclerView
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="10dp"
+    android:id="@+id/ryc_LichSuFrament"></androidx.recyclerview.widget.RecyclerView>
+</LinearLayout>

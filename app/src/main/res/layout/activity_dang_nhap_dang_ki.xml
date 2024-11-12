@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/sunnyteam2"
+    android:orientation="vertical"
+    tools:context=".DangNhapDangKi">
+    <LinearLayout
+        android:layout_width="380dp"
+        android:layout_height="550dp"
+        android:background="@drawable/boder"
+        android:layout_marginTop="150dp"
+        android:padding="8dp"
+        android:layout_gravity="center_horizontal"
+        android:orientation="vertical">
+
+        <com.google.android.material.tabs.TabLayout
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:id="@+id/tab_layout_DNDK"
+            android:background="@drawable/boder_taplayout_login"
+            />
+        <androidx.viewpager2.widget.ViewPager2
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/view_pager_DNDK"
+            app:layout_constraintVertical_bias="0"
+            android:background="@drawable/boder2c_ben_duoi"
+            />
+
+    </LinearLayout>
+
+
+</LinearLayout>
